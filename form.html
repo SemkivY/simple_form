@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <hr />
+    </header>
+    <main>
+      <p>
+        This form is divided into two section: section 1 is required, section 2
+        is optional.
+      </p>
+
+      <p>
+        We will follow up via email or phone and you will receive a set of
+        emails customized to your interests and business needs. To save you time
+        and to get the most out of your conversation with Eloqua, please take a
+        few minutes to fill out Section 2.
+      </p>
+      <form>
+        <fieldset>
+          <legend>Section 1 - Required</legend>
+          <div class="personal">
+            <label for="first_name">*First Name:</label>
+
+            <input
+              type="text"
+              placeholder="first name"
+              required
+              id="first_name"
+              value="Narran"
+              name="first_name"
+            />
+
+            <br />
+            <label for="last_name">*Last Name:</label>
+            <input
+              type="text"
+              placeholder="last name"
+              required
+              id="last_name"
+              name="last_name"
+              value="Parsons"
+            />
+            <br />
+            <label for="title">*Title:</label>
+            <input
+              type="text"
+              placeholder="title"
+              required
+              id="title"
+              name="title"
+            />
+            <br />
+            <label for="phone">*Phone:</label>
+
+            <input
+              type="tel"
+              id="phone"
+              placeholder="your phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+
+            please enter in the following format eg.(4216)864-04440 or
+            +1415864-0440
+
+            <br />
+            <label>*Email:</label>
+            <input type="email" pattern=".+@globex\.com" size="30" required />
+            <br />
+            <label for="set_country">*Country/Region:</label>
+            <select name="country" id="set_country">
+              <option value="">Please choose country</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="Usa">Usa</option>
+              <option value="Canada">Canada</option>
+              <option value="France">France</option>
+              <option value="Great Britain">Great Britain</option>
+              <option value="Italy">Italy</option>
+            </select>
+            <br />
+            <label for="set_state">*Company HQ State/Province:</label>
+            <select name="state" id="set_state">
+              <option value="">Select State or Province</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Alabama">Alabama</option>
+              <option value="California">California</option>
+              <option value="Maryland">Maryland</option>
+              <option value="New York">New York</option>
+            </select>
+            <br />
+            <label for="how_did">*How did you hear about Eloqua:</label>
+            <select name="answear" id="how_did">
+              <option value="">Please select</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Twitter">Twitter</option>
+              <option value="TV">TV</option>
+            </select>
+            <br />
+            <label for="your_industry">*Your industry:</label>
+            <select name="industry" id="your_industry">
+              <option value="">Please select</option>
+              <option value="Agriculture, Forestry, Fishing ">
+                Agriculture, Forestry, Fishing
+              </option>
+              <option value="Forest Support Services">
+                Forest Support Services
+              </option>
+              <option value="Fruit & Nut Farming ">Fruit & Nut Farming</option>
+            </select>
+            <br />
+            <label for="comp_revenue">*Your Company Revenue ($USD):</label>
+            <select name="revenue" id="comp_revenue">
+              <option value="money">Please select</option>
+              <option value="money">20000</option>
+              <option value="money">40000</option>
+              <option value="money">60000</option>
+              <option value="money">100000</option>
+              <option value="money">>100000</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Section 2 - Optional</legend>
+          <div class="question">
+            <label>My Top Marketing Challenges are:</label>
+
+            <input type="radio" name="marketing" />Marketing Accountability
+            <input type="radio" />Better metrics and reports
+            <input type="radio" name="web site" />Make yuor web site a lead
+            generation engine
+            <input type="radio" name="multi-chanel" />Multi-Channel Campaigns
+            <input type="radio" name="relationship" />Deeping relationships with
+            cbstomers <input type="radio" name="processes" />Automate marketing
+            Processes <input type="radio" name="generate" />Generate more and
+            better qualified leads
+            <input type="radio" name="effectivenes" />Marketing effectivenes
+            <input type="radio" name="budget" />Bigger Budget
+            <input type="radio" name="other" />Other
+            <br />
+            <label for="team">Our Sales Team consists of:</label>
+            <input type="checkbox" name="inside" id="team" checked />Inside
+            Sales <input type="checkbox" name="field" id="sales" />Field Sales
+            <input type="checkbox" name="channel" id="partner" />Channel
+            Partners
+            <br />
+            <label>Im interested in finding out more about:</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="50"
+              rows="5"
+            ></textarea>
+            <br />
+            <label>My timeframe for a solution is:</label>
+            <select name="time" id="time">
+              <option value="">Please select</option>
+              <option value="hours">24</option>
+              <option value="hours">48</option>
+              <option value="hours">72</option>
+            </select>
+          </div>
+        </fieldset>
+        <input class="sub" type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

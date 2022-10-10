@@ -1,0 +1,46 @@
+header {
+  background-color: rgb(240, 233, 233);
+}
+h1 {
+  margin-left: 10px;
+  color: rgb(209, 25, 25);
+  font-size: 40px;
+}
+p {
+  font-size: larger;
+  margin-left: 10px;
+}
+legend {
+  color: #e31a1a;
+  font-size: 30px;
+  margin-left: 10px;
+}
+fieldset {
+  border: none;
+  display: flex;
+}
+.personal {
+  padding: 10px 50px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.question {
+  padding: 10px 50px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+
+  align-items: baseline;
+}
+label {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.sub {
+  margin: 0px 10px 10px 125px;
+}
